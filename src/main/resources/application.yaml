@@ -1,0 +1,16 @@
+weather1:
+  url1: https://api.openweathermap.org/data/2.5/weather?q=BURSA&appid=
+
+  secret1: 659de90cb71530d3761b699b5bbeaa5e
+
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/school
+    password: Maviyesil1.
+  jpa:
+    hibernate:
+      ddl-auto: update
