@@ -11,12 +11,14 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/school")
 @RequiredArgsConstructor
+@RequestMapping("/api/v1/school")
+
 public class StudentController {
 
 
-    private final StudentService studentService;
+    private final  StudentService studentService;
+
 
 
     @GetMapping("/get-student")

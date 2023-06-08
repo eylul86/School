@@ -1,12 +1,11 @@
 package com.school.school.entities;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
+import lombok.ToString;
+
 
 import javax.persistence.*;
+import java.util.List;
 
 @Table(name = "student")
 @Data
@@ -26,5 +25,10 @@ public class StudentEntity {
     @Column(name = "mail")
     private String mail;
 
+    @OneToMany(mappedBy ="studentEntity")
+   List<StudentDetailsEntitiy> detailsEntitiyList;
 
+    @ManyToMany
+    @JoinTable(name = "student_new_course", joinColumns = @JoinColumn(name="student_entitiy_id"),inverseJoinColumns = @JoinColumn(name="student_courses_entitiy_id"))
+    private List<StudentCoursesEntitiy> studentCoursesEntitiyList;
 }
