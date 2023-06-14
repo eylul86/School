@@ -53,7 +53,6 @@ public class StudentDetailsController {
     public StudentDetailsEntitiy createOneStudent(@RequestBody StudentPost newStudentpost) {
         return studentDetailsService.createOneStudent(newStudentpost);
 
-
     }
 
     @DeleteMapping("deleteDetails/{studentId}")

@@ -17,7 +17,6 @@ public class StudentDetailsEntitiy {
     @Id
     Long id;
 
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "student_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)

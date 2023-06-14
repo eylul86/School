@@ -21,7 +21,6 @@ public class StudentService {
 
 
     private final   StudentRepository studentRepository;
-
     private final   StudentCoursesRepository studentCoursesRepository;
 
     public List<StudentEntity> getAllStudent() {
@@ -50,12 +49,12 @@ public class StudentService {
 
     }
 
+
     public void deleteStudentId(Long id) {
 
         studentRepository.deleteById(id);
 
     }
-
     public StudentEntity updateStudentById(Long id, StudentEntity studentEntity) {
 
 

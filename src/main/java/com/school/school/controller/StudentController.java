@@ -17,9 +17,7 @@ import java.util.List;
 public class StudentController {
 
 
-    private final  StudentService studentService;
-
-
+    private final StudentService studentService;
 
     @GetMapping("/get-student")
     public List<StudentEntity> getAllStudent() {
@@ -35,7 +33,6 @@ public class StudentController {
     public StudentEntity getStudentById(@PathVariable Long id) {
         return studentService.getStudentById(id);
 
-
     }
 
     @DeleteMapping("delete-student/{id}")
@@ -44,7 +41,6 @@ public class StudentController {
 
         return null;
     }
-
     @PutMapping("put-student/{id}")
     public ResponseEntity<StudentEntity> updateStudentById(@PathVariable(name = "id") Long id, @RequestBody StudentEntity studentEntity) {
         StudentEntity st = studentService.updateStudentById(id, studentEntity);

@@ -12,7 +12,6 @@ public interface StudentDetailsRepository extends JpaRepository <StudentDetailsE
     List<StudentDetailsEntitiy> findByStudentEntity_FirstName(String firstName);
     List<StudentDetailsEntitiy> findByStudentEntity_FirstNameAndStudentEntity_LastName(String firstName,String lastName);
     List<StudentDetailsEntitiy> findByStudentEntity_Mail(String mail);
-
     List<StudentDetailsEntitiy> findByStudentEntity_Id(Long id);
 
 }

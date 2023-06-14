@@ -64,15 +64,10 @@ public class StudentDetailsService {
         return studentDetailsRepository.save(toSave);
 
     }
-
     public List<StudentDetailsEntitiy> getAllStudent() {
         return studentDetailsRepository.findAll();
-
     }
-
-
     public void deleteOneStudent(Long studentId) {
-
         studentDetailsRepository.deleteById(studentId);
 
     }
