@@ -1,9 +1,9 @@
 package com.school.school.dto;
 
-import com.school.school.entities.StudentEntity;
+
 import lombok.Data;
 
-import javax.persistence.Column;
+
 @Data
 public class StudentDetailsDto {
 

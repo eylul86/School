@@ -3,11 +3,9 @@ package com.school.school.controller;
 
 import com.school.school.dto.StudentPost;
 import com.school.school.entities.StudentDetailsEntitiy;
-import com.school.school.entities.StudentEntity;
 import com.school.school.servis.StudentDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 

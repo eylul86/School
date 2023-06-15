@@ -2,7 +2,7 @@ package com.school.school.dto;
 
 import lombok.Data;
 
-import javax.persistence.Column;
+
 import java.util.List;
 
 
